@@ -1,4 +1,4 @@
-package eci.edu.dosw.parcial.Parcial_Corte_1_CVDS.DOSW;
+package eci.edu.dosw.parcial;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
