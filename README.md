@@ -70,4 +70,15 @@ Podemos abstraer muchas cosas de una tienda virtual, en la que, cada clase tiene
 
 Gracias a este principio podemos definir clases absractas de los metodos de pago y modulos, ya que si en algun futuro deban implementar mas no hay que cambiar la logica de los ya implementados tal y como menciona el principio (Abierto para extension cerrado para modificacion)
 
+### 4. PATRONES DE DISEÑO
+
+para la impementacion de nuestra API, tendremos en cuenta los siguientes patrones
+
+Factory
+Tipo: Creacional
+Usamos el parton factory para implementar varios metodos de pago y que la clase principal pueda alternar entre estas, como un usuario debe poder decidir que metodo de pago usar entonces alternamos varias clases de una superclase
+
+Builder
+Tipo Creacional
+Para generar las validaciones podemos separar las tareas entre los modulos creados, ya que un modulo genera una unica validacion y para generar la factura unimos estas tres salidas.
 
