@@ -55,3 +55,19 @@ Hacer un pago - Como usuario quiero hacer un pago para terminar el proceso de co
 Seleccionar metodo de pago - Como usuario quiero cambiar el metodo de pago para poder ajustar al metodo que necesito para hacer la compra
 
 Recibir notificaciones - Como usuario quiero recibir notificaciones para validar que mi compra fue hecha adecuadamente
+
+### 3. Diagrama de clases
+
+Para el diagrama de clases, tome en cuenta la flexibilidad que mencionaba para la api acerca de los metodos de pago y los modulos
+
+## PATRONES DE DISEÑO
+
+### S: single responsability
+
+Podemos abstraer muchas cosas de una tienda virtual, en la que, cada clase tiene su proposito y no debe interferir en el comportamiento de las demas, el mejor ejemplo de este principio solid es la clase EciPayment, ya que como clase principal es la unica que interactua con el usuario, en esta estaran todos los servicios disponibles sin que el usuario tenga que meterse con las demas clases
+
+### O: Open/Close
+
+Gracias a este principio podemos definir clases absractas de los metodos de pago y modulos, ya que si en algun futuro deban implementar mas no hay que cambiar la logica de los ya implementados tal y como menciona el principio (Abierto para extension cerrado para modificacion)
+
+
