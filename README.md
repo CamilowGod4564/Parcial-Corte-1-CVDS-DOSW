@@ -35,8 +35,23 @@ explicacion: El servicio principal sera el ECI PAYMENT y encontramos dos agentes
 - Modulos de la tienda: hace referencia a los demas componentes de la tienda que con la imlementacion de la api no debemos modificar, al momento de hacer un proceso de pago, los demas modulos actualizan los cambios en el sistema principal
 
 A continuacion la imagen del diagrama: 
+
 (nombre de la imagen: DiagramaDeContexto.png)
 
-![alt text](DiagramaDeContextoIMG.png)
+![alt text](docs/DiagramaDeContextoIMG.png)
 
+### 2. Diagrama de casos de uso
 
+![alt text](docs/imagenes/DiagramaCasosDeUsoIMG.png)
+
+En este diagrama de casos de uso encontramos un solo actor, ya que es como tal el unico que interactua directamente con la api, este usuario puede hacer una compra en la tienda, poder seleccionar un metodo de pago y recibir notificaciones al momento de realizar la compra. 
+
+Dentro de cada caso de uso estará implementado el "Como quiero para poder" ( lo puedes confirmar en el astah :D )
+
+Caso de uso - Como quiero para poder
+
+Hacer un pago - Como usuario quiero hacer un pago para terminar el proceso de compra en la tienda 
+
+Seleccionar metodo de pago - Como usuario quiero cambiar el metodo de pago para poder ajustar al metodo que necesito para hacer la compra
+
+Recibir notificaciones - Como usuario quiero recibir notificaciones para validar que mi compra fue hecha adecuadamente
